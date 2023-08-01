@@ -1,0 +1,431 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Color Variables */
+:root {
+    --c-gray-900: #f5f5f5; 
+    --c-gray-800: #ededed; 
+    --c-gray-700: #e0e0e0; 
+    --c-gray-600: #d2d2d2; 
+    --c-gray-500: #b0afad; 
+    --c-gray-400: #949391; 
+    --c-gray-300: #c4c4c4; 
+    --c-gray-200: #f9f9f9; 
+    --c-gray-100: #ffffff;
+    
+    --c-green-500: #45ffbc;
+    --c-olive-500: #e3ffa8;
+    
+    --c-white: var(--c-gray-100);
+    
+    --c-text-primary: #000000;
+    --c-text-secondary: #000000;
+    --c-text-tertiary: #000000;
+  }
+
+/* Global Styles */
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+  font-family: "Be Vietnam Pro", sans-serif;
+  background-color: var(--c-gray-900);
+  color: var(--c-text-primary);
+  display: flex;
+  justify-content: center;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button, select, input, textarea {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+/* Layout Styles */
+.responsive-wrapper {
+  width: 90%;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+ 
+.app {
+  height: 100vh;
+  width: 100%;
+  max-width: 1600px;
+  background-color: var(--c-gray-800);
+  padding: 2vw 4vw 6vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.app-header {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    align-items: flex-start; /* Center items horizontally */
+    justify-content: space-between; /* Space items evenly */
+    margin-bottom: 1rem;
+  }
+
+  .app-body {
+    display: flex;
+    flex: 1 1 auto; /* Let the main content grow */
+    padding: 50px;
+  }
+
+  .app-body-main-content {
+    flex: 1 1 auto; /* Let the main content grow */
+    padding: 20px;
+  }
+  
+  .app-header-logo {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: center; 
+  }
+ 
+
+.tabs {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(20px);
+  padding: 10px; 
+}
+
+.tabs a {
+  text-decoration: none;
+  color: #0a6020;
+  padding: 8px 16px;
+  border: 5px solid #0a6020;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+/*.tabs a:hover {
+  background-color: #ddd8d8;
+} */
+
+/* CSS for the tab links */
+.tab-link {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+/* Hover effect for the tab links */
+.tab-link:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background on hover */
+}
+  
+  .logo {
+    display: flex;
+    align-items: center; 
+  }
+  
+  .logo-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    margin-right: 0.5rem; /* Add some spacing between the logo and title */
+  }
+
+  .logo-title {
+    display: flex;
+    flex-direction: row;
+    line-height: 1.25;
+    margin-left: 0.75rem;
+    font-size: 1.5rem; /* Adjust the font size as needed */
+    /* color: white; */
+  }
+
+
+
+  .app-body-sidebar {
+    background-color: #000;
+    color: #ffffff;
+}
+
+/* Add styles for the links in the sidebar */
+.app-body-sidebar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+/* Add styles for the links when hovered */
+.app-body-sidebar a:hover {
+    background-color: #333; /* You can change this color to your preference */
+}
+
+
+
+/* Footer Styles */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #a2a2a2;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.footer h1 {
+  font-size: 1.5rem;
+  line-height: 1.125;
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer h1 small {
+  font-size: 0.5em;
+  margin-left: 0.25em;
+  
+}
+
+.footer div {
+  border-top: 1px solid var(--c-gray-600);
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  font-size: 0.75rem;
+  color: var(--c-text-tertiary);
+}
+.manage li {
+    text-decoration: none;
+}
+
+/* Remove underlines from links */
+a {
+  text-decoration: none;
+}
+
+/* Remove bullets from list items */
+ul, li {
+  list-style: none;
+}
+
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+h2 {
+  color: #666;
+}
+
+p {
+  margin: 5px 0;
+}
+
+a.back-to-home {
+  color: #d0e5fb;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Form Styles */
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  padding: 5px;
+  width: 100%;
+}
+
+input[type="submit"] {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+th {
+  background-color: #f5f5f5;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Success Message Styles */
+.success-message {
+  color: green;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Error Message Styles */
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.back-to-home {
+  background-color: grey;
+  color: #fff;
+  padding: 5px 10px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Adjust the margin between the Add Animal button and the link */
+.back-to-home {
+  margin-left: 0px;
+}
+
+
+/* CSS code to put the .animal-unit-cost div at the top */
+.animal-unit-cost {
+  order: 1; /* Order of 1 places it at the top */
+}
+
+.animal-cost-table {
+  order: 2; /* Order of 2 places it below .animal-unit-cost */
+}
+
+.back-to-home-2 {
+  order: 3; /* Order of 3 places it at the bottom */
+  background-color: grey;
+  color: #fff;
+  padding: 5px 10px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Additional styles for better alignment */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Add spacing between elements */
+.animal-unit-cost,
+.animal-cost-table,
+.back-to-home-2 {
+  margin-bottom: 20px;
+}
+
+
+/* Update the layout to flex */
+.app {
+  display: flex;
+  flex-direction: row;
+  height: 100vh; /* Adjust to fit the viewport height */
+}
+
+.app-header {
+  /* ... existing styles ... */
+  flex: 0 0 auto; /* Avoid header from growing */
+}
+
+.app-body {
+  display: flex;
+  flex: 1 1 auto; /* Let the main content grow */
+}
+
+.app-body-main-content {
+  flex: 1 1 auto; /* Let the main content grow */
+  padding: 20px;
+}
+
+.app-body-dropdown-sidebar {
+  flex: 1;
+  background-color: #ffffff; /* Add a background color */
+  padding: 100px;
+}
+
+@media (max-width: 1000px) {
+  .tab-links {
+    font-size: 18px !important;
+    padding: 15px 25px !important;
+}
+  
+  .app {
+    flex-direction: column; 
+  }
+
+  .app-body {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .app-body-dropdown-sidebar {
+    display: block; 
+    padding: auto;
+    width: 100%;
+  }
+
+  .app-body-main-content {
+    width: 100% - 50px;
+  }
+}
+
+
